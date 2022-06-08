@@ -10,11 +10,11 @@ chances = 3
 Letra = ''
 print('Joguinho da palavra mistériosa, para sair, digite: sair \nVamos começar!')
 
-while Letra != 'sair':
+while True:
     sPalavraSecTemp = ''
     Letra = input('Digite uma letra ')
     
-    if Letra == 'sair':
+    if Letra.lower() == 'sair':
         break
     elif len(Letra) > 1:
         print('Eu só aceito letras')
